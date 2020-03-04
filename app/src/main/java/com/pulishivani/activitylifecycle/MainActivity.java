@@ -54,7 +54,12 @@ public class MainActivity extends AppCompatActivity {
         editor.putInt("onCreateF",sharedPreferences.getInt("onCreateF",0)+1);
         editor.apply();
 
-        onCreateF.setText(sharedPreferences.getInt("onCreateF",-1));
+        onCreateF.setText(""+sharedPreferences.getInt("onCreateF",-1));
+        onRestartF.setText(""+sharedPreferences.getInt("onRestartF",-1));
+        onResumeF.setText(""+sharedPreferences.getInt("onResumeF",-1));
+        onDestroyF.setText(""+sharedPreferences.getInt("onDestroyF",0));
+        onPauseF.setText(""+sharedPreferences.getInt("onPauseF",-1));
+        onStopF.setText(""+sharedPreferences.getInt("onStopF",-1));
 
     }
     @Override
@@ -63,8 +68,8 @@ public class MainActivity extends AppCompatActivity {
         editor.putInt("onResume",sharedPreferences.getInt("onResume",0)+1);
         editor.putInt("onResumeF",sharedPreferences.getInt("onResumeF",0)+1);
         editor.apply();
-        onResume.setText(sharedPreferences.getInt("onResume",-1));
-        onResumeF.setText(sharedPreferences.getInt("onResumeF",-1));
+        onResume.setText(""+sharedPreferences.getInt("onResume",-1));
+        onResumeF.setText(""+sharedPreferences.getInt("onResumeF",-1));
     }
 
     @Override
@@ -73,8 +78,8 @@ public class MainActivity extends AppCompatActivity {
         editor.putInt("onRestart",sharedPreferences.getInt("onRestart",0)+1);
         editor.putInt("onRestartF",sharedPreferences.getInt("onRestartF",0)+1);
         editor.apply();
-        onRestart.setText(sharedPreferences.getInt("onRestart",-1));
-        onRestartF.setText(sharedPreferences.getInt("onRestartF",-1));
+        onRestart.setText(""+sharedPreferences.getInt("onRestart",-1));
+        onRestartF.setText(""+sharedPreferences.getInt("onRestartF",-1));
     }
 
     @Override
@@ -83,8 +88,8 @@ public class MainActivity extends AppCompatActivity {
         editor.putInt("onStart",sharedPreferences.getInt("onStart",0)+1);
         editor.putInt("onStartF",sharedPreferences.getInt("onStartF",0)+1);
         editor.apply();
-        onStart.setText(sharedPreferences.getInt("onStart",-1));
-        onStartF.setText(sharedPreferences.getInt("onStartF",-1));
+        onStart.setText(""+sharedPreferences.getInt("onStart",-1));
+        onStartF.setText(""+sharedPreferences.getInt("onStartF",-1));
     }
 
     @Override
@@ -93,8 +98,8 @@ public class MainActivity extends AppCompatActivity {
         editor.putInt("onDestroy",sharedPreferences.getInt("onDestroy",0)+1);
         editor.putInt("onDestroyF",sharedPreferences.getInt("onDestroyF",0)+1);
         editor.apply();
-        onDestroy.setText(sharedPreferences.getInt("onDestroy",-1));
-        onDestroyF.setText(sharedPreferences.getInt("onDestroyF",-1));
+        onDestroy.setText(""+sharedPreferences.getInt("onDestroy",-1));
+        onDestroyF.setText(""+sharedPreferences.getInt("onDestroyF",-1));
     }
 
     @Override
@@ -103,8 +108,8 @@ public class MainActivity extends AppCompatActivity {
         editor.putInt("onPause",sharedPreferences.getInt("onPause",0)+1);
         editor.putInt("onPauseF",sharedPreferences.getInt("onPauseF",0)+1);
         editor.apply();
-        onPause.setText(sharedPreferences.getInt("onPause",-1));
-        onPauseF.setText(sharedPreferences.getInt("onPauseF",-1));
+        onPause.setText(""+sharedPreferences.getInt("onPause",-1));
+        onPauseF.setText(""+sharedPreferences.getInt("onPauseF",-1));
     }
 
     @Override
@@ -113,7 +118,7 @@ public class MainActivity extends AppCompatActivity {
         editor.putInt("onStop",sharedPreferences.getInt("onStop",0)+1);
         editor.putInt("onStopF",sharedPreferences.getInt("onStopF",0)+1);
         editor.apply();
-        onStop.setText(sharedPreferences.getInt("onStop",-1));
-        onStopF.setText(sharedPreferences.getInt("onStopF",-1));
+        onStop.setText(""+sharedPreferences.getInt("onStop",-1));
+        onStopF.setText(""+sharedPreferences.getInt("onStopF",-1));
     }
 }
