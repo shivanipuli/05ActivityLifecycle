@@ -5,11 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
-import android.util.Log;
-import android.view.View;
-import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     SharedPreferences sharedPreferences;
@@ -119,6 +115,5 @@ public class MainActivity extends AppCompatActivity {
         editor.apply();
         onStop.setText(sharedPreferences.getInt("onStop",-1));
         onStopF.setText(sharedPreferences.getInt("onStopF",-1));
-    }
     }
 }
